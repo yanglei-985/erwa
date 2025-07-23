@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二娃课时记录 - 2024年7-8月</title>
+    <title>课时记录 - 2024年7-8月</title>
     <style>
         * {
             margin: 0;
@@ -158,17 +158,195 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+                margin-bottom: 8px;
+            }
+            
+            .header p {
+                font-size: 0.9em;
+            }
+            
+            .total-hours {
+                padding: 12px;
+                margin-top: 15px;
+            }
+            
+            .total-hours h2 {
+                font-size: 1.4em;
+                margin-bottom: 3px;
+            }
+            
+            .calendar-container {
+                padding: 15px;
+            }
+            
+            .month-section {
+                margin-bottom: 25px;
+            }
+            
+            .month-title {
+                font-size: 1.4em;
+                padding: 12px;
+                margin-bottom: 15px;
+            }
+            
             .calendar {
+                font-size: 0.8em;
+                gap: 1px;
+            }
+            
+            .day-header {
+                padding: 8px 4px;
                 font-size: 0.9em;
             }
             
             .day {
-                min-height: 60px;
+                min-height: 50px;
+                padding: 4px;
+            }
+            
+            .day-number {
+                font-size: 1em;
+            }
+            
+            .hours {
+                padding: 4px 6px;
+                font-size: 0.75em;
+                margin-top: 4px;
+                border-radius: 12px;
+            }
+            
+            .instructions {
+                margin: 15px;
+                padding: 15px;
+                border-radius: 12px;
+            }
+            
+            .instructions h3 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .instructions p {
+                font-size: 0.9em;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
                 padding: 5px;
             }
             
+            .header {
+                padding: 15px 10px;
+            }
+            
             .header h1 {
-                font-size: 2em;
+                font-size: 1.6em;
+            }
+            
+            .total-hours h2 {
+                font-size: 1.2em;
+            }
+            
+            .calendar-container {
+                padding: 10px;
+            }
+            
+            .month-title {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            
+            .calendar {
+                font-size: 0.75em;
+            }
+            
+            .day-header {
+                padding: 6px 2px;
+                font-size: 0.8em;
+            }
+            
+            .day {
+                min-height: 45px;
+                padding: 3px;
+            }
+            
+            .day-number {
+                font-size: 0.9em;
+            }
+            
+            .hours {
+                padding: 3px 5px;
+                font-size: 0.7em;
+                margin-top: 3px;
+                border-radius: 10px;
+            }
+            
+            .instructions {
+                margin: 10px;
+                padding: 12px;
+            }
+            
+            .instructions h3 {
+                font-size: 1em;
+            }
+            
+            .instructions p {
+                font-size: 0.85em;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .header h1 {
+                font-size: 1.4em;
+            }
+            
+            .total-hours h2 {
+                font-size: 1.1em;
+            }
+            
+            .month-title {
+                font-size: 1.1em;
+                padding: 8px;
+            }
+            
+            .calendar {
+                font-size: 0.7em;
+            }
+            
+            .day-header {
+                padding: 5px 1px;
+                font-size: 0.75em;
+            }
+            
+            .day {
+                min-height: 40px;
+                padding: 2px;
+            }
+            
+            .day-number {
+                font-size: 0.85em;
+            }
+            
+            .hours {
+                padding: 2px 4px;
+                font-size: 0.65em;
+                margin-top: 2px;
             }
         }
     </style>
@@ -176,7 +354,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🌟 二娃课时记录表</h1>
+            <h1>🌟 二娃上课记录表</h1>
             <p>2024年7月21日 - 8月30日</p>
             <div class="total-hours">
                 <h2>📊 已上课时统计</h2>
@@ -184,19 +362,20 @@
             </div>
         </div>
 
-    
+       
+
         <div class="calendar-container">
             <!-- 7月份 -->
             <div class="month-section">
                 <div class="month-title">🌞 七月 July 2024</div>
                 <div class="calendar">
-                    <div class="day-header">周日</div>
                     <div class="day-header">周一</div>
                     <div class="day-header">周二</div>
                     <div class="day-header">周三</div>
                     <div class="day-header">周四</div>
                     <div class="day-header">周五</div>
                     <div class="day-header">周六</div>
+                    <div class="day-header">周日</div>
                     
                     <div class="day empty-day"><div class="day-number"></div></div>
                     <div class="day empty-day"><div class="day-number"></div></div>
@@ -245,13 +424,13 @@
             <div class="month-section">
                 <div class="month-title">🌻 八月 August 2024</div>
                 <div class="calendar">
-                    <div class="day-header">周日</div>
                     <div class="day-header">周一</div>
                     <div class="day-header">周二</div>
                     <div class="day-header">周三</div>
                     <div class="day-header">周四</div>
                     <div class="day-header">周五</div>
                     <div class="day-header">周六</div>
+                    <div class="day-header">周七</div>
                     
                     <div class="day empty-day"><div class="day-number"></div></div>
                     <div class="day empty-day"><div class="day-number"></div></div>
